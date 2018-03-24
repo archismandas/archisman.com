@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Archisman Das - Coder. Entrepreneur. Product Manager.</title>
+		<meta name="description" content="Product Manager with an entrepreneurial background. Previously, early employee at PixFirst, founder at Schoolkhoj and Product Manager at Trilogy.">
+		<meta name="keywords" content="archisman, archisman das, product manager, coder, entrepreneur, startup, web, mobile, trilogy, pixfirst, django, jquery, python, user experience, housing, practo">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/reset.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="./css/static.css" type="text/css" media="screen">
+	</head>
+	<body>
+		<header>
+			<nav id="nav-main">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="./history.html">History</a></li>
+					<li><a href="./read.html">Read</a></li>
+				</ul>
+			</nav>
+			<div id="nav-trigger">
+				<span>Menu</span>
+			</div>
+			<nav id="nav-mobile"></nav>
+		
+		</header>
+		<!-- Introductory Content -->
+		<article class="main row">
+			<section class="profile-pic-container col-5 col-m-6">
+				<img class="profile-pic" src="./img/Archisman_Das.jpg" alt="Archisman Das" title="Practising css3 transitions">
+			</section>
+			<section class="introduction col-7 col-m-6">
+				<h1>Hi, I'm <strong>Archisman</strong>. </h1>
+				<p>
+					I'm a <em>Coder</em>, <em>Entrepreneur</em> and <em>Product Manager</em>. I like building things. I love solving problems. I strive to understand the Whys.
+				</p>
+				<p>
+					I spend a lot of time reading and sometimes writing (a bit). This website started as an exercise to improve my badly handicapped html/css skills.
+				</p>
+			</section>
+		</article>
+		<!-- Start Javascript -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#nav-mobile").html($("#nav-main").html());
+				$("#nav-trigger span").click(function(){
+					if ($("nav#nav-mobile ul").hasClass("expanded")) {
+						$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+						$(this).removeClass("open");
+					} else {
+						$("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+						$(this).addClass("open");
+					}
+				});
+			});
+		</script>
+
+	</body>
+</html>
