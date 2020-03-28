@@ -51,6 +51,10 @@ p {
     display: none;
 }
 
+.courier {
+    font-family: 'Courier New', sans-serif;
+}
+
 /* =Nav
 -------------------------------------------------------------- */
 #nav-trigger {
